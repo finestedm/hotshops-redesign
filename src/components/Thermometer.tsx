@@ -5,6 +5,7 @@ import RemoveIcon from '@mui/icons-material/Remove';
 export default function Thermometer() {
     return (
         <ToggleButtonGroup
+            size='small'
             value='center'
             aria-label="text alignment"
         >
@@ -12,7 +13,7 @@ export default function Thermometer() {
                 <AddIcon />
             </ToggleButton>
             <ToggleButton value="center" aria-label="centered">
-                <Typography>123C</Typography>
+                <Typography p={.6}>123c</Typography>
             </ToggleButton>
             <ToggleButton value="right" aria-label="right aligned">
                 <RemoveIcon />
