@@ -71,11 +71,11 @@ export const customGreyPaletteDark = {
 };
 
 //colors
-const JHYellow = '#ffb900'
+const HotShopsRed = '#e42940'
 const JHYellow75 = '#BA8800'
 const greyColorDark = '#3c464b'
 const grey120ColorDark = '#1d1f20'
-const primaryColor = JHYellow;
+const primaryColor = HotShopsRed;
 const secondaryColor = '#009697'
 const successColor = '#70AE6E'
 const backgroundColor = '#f8fafc'
@@ -88,7 +88,7 @@ const greyLightMinus10BlackColor = '#EAEFF1'
 const greyLightColor = '#C0CBCE'
 
 
-const primaryColorDark = JHYellow
+const primaryColorDark = HotShopsRed
 const secondaryColorDark = '#009697'
 const successColorDark = '#94DDBC'
 const backgroundColorDark = '#1f1f21'
@@ -249,7 +249,7 @@ theme = createTheme({
                 root: {
                     input: {
                         "&:-webkit-autofill": {
-                            WebkitBoxShadow: `0 0 0 100px ${tinycolor(JHYellow).lighten(40).toRgbString()} inset`,
+                            WebkitBoxShadow: `0 0 0 100px ${tinycolor(HotShopsRed).lighten(40).toRgbString()} inset`,
                         },
                     },
                 },
@@ -693,7 +693,7 @@ export const themeDark = createTheme({
                 root: {
                     input: {
                         "&:-webkit-autofill": {
-                            WebkitBoxShadow: `0 0 0 100px ${tinycolor(JHYellow).darken(27).toRgbString()} inset`,
+                            WebkitBoxShadow: `0 0 0 100px ${tinycolor(HotShopsRed).darken(27).toRgbString()} inset`,
                         },
                     },
                 },
