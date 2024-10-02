@@ -446,8 +446,6 @@ theme = createTheme({
         MuiChip: {
             styleOverrides: {
                 root: {
-                    backgroundColor: customGreyPalette[600],
-                    color: theme.palette.getContrastText(customGreyPalette[600]),
                     height: 24
                 }
             }

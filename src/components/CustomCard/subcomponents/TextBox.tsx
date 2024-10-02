@@ -10,14 +10,12 @@ export default function TextBox() {
                 <Typography gutterBottom variant="h6" component="div">
                     Playstation 5 Pro
                 </Typography>
-                <Stack direction='row' spacing={1} alignItems='end'>
-                    <Typography variant='h5' display="inline" color="primary">
-                        725 zł
-                    </Typography>
+                <Typography variant='h5' display="inline" color="primary">
+                    725 zł
                     <Typography variant='h6' color='textDisabled' display="inline" sx={{ textDecoration: 'line-through', textDecorationColor: theme.palette.grey[600], fontWeight: 500 }}>
-                        999 zł
+                        {` 999 zł`}
                     </Typography>
-                </Stack>
+                </Typography>
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     Lizards are a widespread group of squamate reptiles, with over 6,000
                     species, ranging across all continents except Antarctica
