@@ -5,12 +5,13 @@ import TextBox from "./subcomponents/TextBox";
 import OfferTime from "./subcomponents/OfferTime";
 import GoToCommentsButton from "./subcomponents/GoToCommentsButton";
 import TopBar from "./subcomponents/TopBar";
+import CardBottom from "./subcomponents/CardBottom";
 
 export default function CustomCard() {
     const theme = useTheme();
 
     return (
-        <Card sx={{ maxWidth: 500, textAlign: 'left' }}>
+        <Card sx={{ textAlign: 'left' }}>
             <CardContent>
                 <Stack spacing={1} p={0}>
                     <TopBar />
@@ -32,9 +33,8 @@ export default function CustomCard() {
                 </Stack>
             </CardContent>
             <Divider />
-            <CardActions sx={{backgroundColor: theme.palette.grey[50]}}>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
+            <CardActions sx={{backgroundColor: theme.palette.background.paper}}>
+                <CardBottom />
             </CardActions>
         </Card >
     )

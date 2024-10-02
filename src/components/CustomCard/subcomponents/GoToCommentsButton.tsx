@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Box, Button, Stack } from "@mui/material";
 import CommentIcon from '@mui/icons-material/Comment';
 
 export default function GoToCommentsButton() {
@@ -9,7 +9,14 @@ export default function GoToCommentsButton() {
                 variant='contained' 
                 startIcon={<CommentIcon />}
             >
-                Przejdź do komentarzy
+                <Stack direction='row' spacing={2} justifyContent='space-around'>
+                    <span>
+                        Przejdź do komentarzy
+                    </span>
+                    <span>
+                        (12)
+                    </span>
+                </Stack>
             </Button>
         </Box>
     )

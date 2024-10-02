@@ -1,15 +1,19 @@
 import './App.css';
-import { CssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline, Stack, ThemeProvider } from '@mui/material';
 import theme from './theme';
 import { themeDark } from './theme';
-import CustomCard from './components/CustomCard/CustomCard'
+import Main from './components/Main/Main';
+import TopBar from './components/TopBar/TopBar';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <div className="App">
-        <CustomCard />
+        <Stack spacing={8}>
+          <TopBar />
+          <Main />
+        </Stack>
       </div>
     </ThemeProvider>
   );
