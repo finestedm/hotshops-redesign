@@ -135,7 +135,7 @@ theme = createTheme({
 
     typography: {
         fontFamily: [
-            'Manrope', // Primary font
+            'Barlow', // Primary font
             'sans-serif',
         ].join(','),
         fontWeightRegular: 500,
