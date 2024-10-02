@@ -9,9 +9,9 @@ export default function TagBox() {
 
     return (
         <Stack direction='row' spacing={.5}>
-            <Chip variant="outlined" label='Elektronika' sx={{ color: theme.palette.primary.main }} />
-            <Chip label='Gry' />
-            <Chip label='Rozrywka' />
+            <Chip size="small" label='Elektronika' />
+            <Chip size="small" label='Gry' />
+            <Chip size="small" label='Rozrywka' />
         </Stack>
     )
 }

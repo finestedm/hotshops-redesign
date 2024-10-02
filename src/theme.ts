@@ -446,7 +446,6 @@ theme = createTheme({
         MuiChip: {
             styleOverrides: {
                 root: {
-                    height: 24
                 }
             }
         },

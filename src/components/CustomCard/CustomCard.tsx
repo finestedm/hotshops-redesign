@@ -3,6 +3,8 @@ import Thermometer from "./subcomponents/Thermometer";
 import ImageBox from "./subcomponents/ImageBox";
 import TextBox from "./subcomponents/TextBox";
 import OfferTime from "./subcomponents/OfferTime";
+import GoToCommentsButton from "./subcomponents/GoToCommentsButton";
+import TopBar from "./subcomponents/TopBar";
 
 export default function CustomCard() {
     const theme = useTheme();
@@ -11,9 +13,7 @@ export default function CustomCard() {
         <Card sx={{ maxWidth: 500, textAlign: 'left' }}>
             <CardContent>
                 <Stack spacing={1} p={0}>
-                    <Box>
-                        <OfferTime />
-                    </Box>
+                    <TopBar />
                     <Divider />
                     <Box>
                         <Grid2 container spacing={4}>
@@ -28,6 +28,7 @@ export default function CustomCard() {
                             </Grid2>
                         </Grid2>
                     </Box>
+                    <GoToCommentsButton />
                 </Stack>
             </CardContent>
             <Divider />
