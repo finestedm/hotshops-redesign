@@ -3,8 +3,9 @@ import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
+import { TOffer } from "../../../data/offers";
 
-export default function Thermometer() {
+export default function Thermometer({temperature}: {temperature: TOffer['temperature']}) {
     return (
         <Box>
             <ToggleButtonGroup
@@ -17,7 +18,7 @@ export default function Thermometer() {
                     <WhatshotIcon fontSize="small" color="error" />
                 </ToggleButton>
                 <ToggleButton value="center" aria-label="centered">
-                    <Typography fontSize='120%' fontWeight={600} p={.6}>123°</Typography>
+                    <Typography fontSize='120%' fontWeight={600} p={.6}>{temperature}°</Typography>
                 </ToggleButton>
                 <ToggleButton value="right" aria-label="right aligned" color="info">
                     <AcUnitIcon fontSize="small" color="info" />
