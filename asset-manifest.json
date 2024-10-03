@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.1a3c81fa.css",
-    "main.js": "/static/js/main.5ef1974e.js",
-    "static/media/playstation.webp": "/static/media/playstation.56aea3cdf61707f985c7.webp",
-    "index.html": "/index.html",
-    "static/media/Flag_of_Poland.svg.webp": "/static/media/Flag_of_Poland.svg.b0bd76eb6d49c56663eb.webp",
-    "main.1a3c81fa.css.map": "/static/css/main.1a3c81fa.css.map",
-    "main.5ef1974e.js.map": "/static/js/main.5ef1974e.js.map"
+    "main.css": "/hotshops-redesign/static/css/main.1a3c81fa.css",
+    "main.js": "/hotshops-redesign/static/js/main.259761b2.js",
+    "static/media/playstation.webp": "/hotshops-redesign/static/media/playstation.56aea3cdf61707f985c7.webp",
+    "index.html": "/hotshops-redesign/index.html",
+    "static/media/Flag_of_Poland.svg.webp": "/hotshops-redesign/static/media/Flag_of_Poland.svg.b0bd76eb6d49c56663eb.webp",
+    "main.1a3c81fa.css.map": "/hotshops-redesign/static/css/main.1a3c81fa.css.map",
+    "main.259761b2.js.map": "/hotshops-redesign/static/js/main.259761b2.js.map"
   },
   "entrypoints": [
     "static/css/main.1a3c81fa.css",
-    "static/js/main.5ef1974e.js"
+    "static/js/main.259761b2.js"
   ]
 }
