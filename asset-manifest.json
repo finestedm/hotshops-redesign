@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.1a3c81fa.css",
-    "main.js": "/static/js/main.df70adee.js",
+    "main.js": "/static/js/main.5ef1974e.js",
     "static/media/playstation.webp": "/static/media/playstation.56aea3cdf61707f985c7.webp",
     "index.html": "/index.html",
     "static/media/Flag_of_Poland.svg.webp": "/static/media/Flag_of_Poland.svg.b0bd76eb6d49c56663eb.webp",
     "main.1a3c81fa.css.map": "/static/css/main.1a3c81fa.css.map",
-    "main.df70adee.js.map": "/static/js/main.df70adee.js.map"
+    "main.5ef1974e.js.map": "/static/js/main.5ef1974e.js.map"
   },
   "entrypoints": [
     "static/css/main.1a3c81fa.css",
-    "static/js/main.df70adee.js"
+    "static/js/main.5ef1974e.js"
   ]
 }
