@@ -15,8 +15,11 @@ export default function TextBox() {
                 <Box>
                     <Typography variant='h5' display="inline" color="primary">
                         725 zł
-                        <Typography variant='h6' color='textDisabled' display="inline" sx={{ textDecoration: 'line-through', textDecorationColor: theme.palette.grey[600], fontWeight: 500 }}>
+                        <Typography ml={1} variant='h6' color='textDisabled' display="inline" sx={{ textDecoration: 'line-through', textDecorationColor: theme.palette.grey[600], fontWeight: 500 }}>
                             {` 999 zł`}
+                        </Typography>
+                        <Typography variant='body1' color='text.secondary' display="inline" ml={1}>
+                            {`(- ${(Math.trunc(((999-725)/999)*100)).toString()} %)`}
                         </Typography>
                     </Typography>
                     <br />
@@ -24,8 +27,7 @@ export default function TextBox() {
                         <LocalShippingOutlinedIcon htmlColor={theme.palette.text.secondary} fontSize="small"/>
                         <Typography variant="body2" sx={{ color: 'text.secondary' }}>22 zł</Typography>
                     </Stack>
-                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>
-                    </Typography>
+                    <Typography variant="body2" sx={{ color: 'text.secondary' }}>Sklep: <em>Allegro.pl</em></Typography>
                 </Box>
                 <Box>
                     <Chip 

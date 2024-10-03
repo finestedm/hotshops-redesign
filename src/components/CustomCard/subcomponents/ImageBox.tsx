@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, Chip, useTheme } from "@mui/material";
 import playstation from '../../../media/playstation.webp'
 
 
@@ -7,7 +7,7 @@ export default function ImageBox() {
 
 
     return (
-        <Box border={1} borderRadius={1} borderColor={theme.palette.divider}>
+        <Box border={1} borderRadius={1} borderColor={theme.palette.divider} position='relative'>
             <img
                 height='125'
                 src={playstation}
@@ -15,6 +15,15 @@ export default function ImageBox() {
                 style={{ objectFit: 'cover' }}
                 width='100%'
             />
+            <Chip 
+                label='-27%' 
+                component={Box}
+                position='absolute'
+                top={-10}
+                left={-10}
+                sx={{transform: 'rotate(-10deg)'}}
+                color="primary"
+            /> 
         </Box>
     )
 }

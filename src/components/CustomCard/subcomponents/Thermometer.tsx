@@ -14,13 +14,13 @@ export default function Thermometer() {
                 sx={{ padding: 0 }}
             >
                 <ToggleButton value="left" aria-label="left aligned" color="error">
-                    <WhatshotIcon color="error" />
+                    <WhatshotIcon fontSize="small" color="error" />
                 </ToggleButton>
                 <ToggleButton value="center" aria-label="centered">
-                    <Typography p={.6}>123c</Typography>
+                    <Typography fontSize='120%' fontWeight={600} p={.6}>123°</Typography>
                 </ToggleButton>
                 <ToggleButton value="right" aria-label="right aligned" color="info">
-                    <AcUnitIcon color="info" />
+                    <AcUnitIcon fontSize="small" color="info" />
                 </ToggleButton>
             </ToggleButtonGroup>
         </Box>
