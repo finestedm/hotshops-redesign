@@ -9,7 +9,7 @@ export default function ImageBox() {
     return (
         <Box border={1} borderRadius={1} borderColor={theme.palette.divider} position='relative'>
             <img
-                height='125'
+                height='175'
                 src={playstation}
                 alt="green iguana"
                 style={{ objectFit: 'cover' }}
@@ -21,7 +21,7 @@ export default function ImageBox() {
                 position='absolute'
                 top={-10}
                 left={-10}
-                sx={{transform: 'rotate(-10deg)'}}
+                sx={{transform: 'rotate(-10deg)', fontWeight: 800}}
                 color="primary"
             /> 
         </Box>

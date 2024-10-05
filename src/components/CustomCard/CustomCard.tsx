@@ -7,6 +7,7 @@ import GoToCommentsButton from "./subcomponents/GoToCommentsButton";
 import TopBar from "./subcomponents/TopBar";
 import CardBottom from "./subcomponents/CardBottom";
 import { TOffer } from "../../data/offers";
+import BottomButtonBox from "./subcomponents/OfferButtonBox";
 
 export default function CustomCard({ offerDetails }: { offerDetails: TOffer }) {
     const theme = useTheme();
@@ -26,15 +27,17 @@ export default function CustomCard({ offerDetails }: { offerDetails: TOffer }) {
                                 </Stack>
                             </Grid2>
                             <Grid2 size={7}>
-                                <TextBox offerDetails={offerDetails}/>
+                                <Stack spacing={4}>
+                                    <TextBox offerDetails={offerDetails} />
+                                    <BottomButtonBox />
+                                </Stack>
                             </Grid2>
                         </Grid2>
                     </Box>
-                    <GoToCommentsButton />
                 </Stack>
             </CardContent>
             <Divider />
-            <CardActions sx={{backgroundColor: theme.palette.background.paper}}>
+            <CardActions sx={{ backgroundColor: theme.palette.background.paper }}>
                 <CardBottom />
             </CardActions>
         </Card >

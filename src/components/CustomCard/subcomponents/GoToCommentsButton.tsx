@@ -1,22 +1,15 @@
 import { Box, Button, Stack } from "@mui/material";
-import CommentIcon from '@mui/icons-material/Comment';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-export default function GoToCommentsButton() {
+export default function GoToOfferButton() {
     return (
         <Box>
-            <Button 
+            <Button
                 fullWidth
-                variant='contained' 
-                startIcon={<CommentIcon />}
+                variant='contained'
+                endIcon={<OpenInNewIcon />}
             >
-                <Stack direction='row' spacing={2} justifyContent='space-around'>
-                    <span>
-                        Przejdź do komentarzy
-                    </span>
-                    <span>
-                        (12)
-                    </span>
-                </Stack>
+                Przejdź do okazji
             </Button>
         </Box>
     )
