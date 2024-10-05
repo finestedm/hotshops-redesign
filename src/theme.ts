@@ -571,8 +571,8 @@ export const themeDark = createTheme({
             main: successColorDark,
         },
         background: {
-            default: backgroundColorDark,
-            paper: paperColorDark
+            default: paperColorDark,
+            paper: backgroundColorDark
         },
         info: {
             main: infoColorDark

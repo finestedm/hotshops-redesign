@@ -8,6 +8,7 @@ export default function GoToOfferButton() {
                 fullWidth
                 variant='contained'
                 endIcon={<OpenInNewIcon />}
+                color="primary"
             >
                 Przejdź do okazji
             </Button>
