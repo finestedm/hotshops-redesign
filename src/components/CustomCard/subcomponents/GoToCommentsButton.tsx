@@ -3,16 +3,19 @@ import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 export default function GoToOfferButton() {
     return (
-        <Box>
-            <Button
-                sx={{borderRadius: 10}}
-                fullWidth
-                variant='contained'
-                endIcon={<OpenInNewIcon />}
-                color="primary"
-            >
-                Przejdź do okazji
-            </Button>
-        </Box>
+        <Button
+            sx={{
+                borderRadius: 10,
+                textOverflow: 'ellipsis',  // Truncates text with ellipsis
+                whiteSpace: 'nowrap',      // Prevents the text from wrapping to a new line
+                overflow: 'hidden'         // Hides the overflowed text
+            }}
+            fullWidth
+            variant='contained'
+            endIcon={<OpenInNewIcon />}
+            color="primary"
+        >
+            Otwórz okazję
+        </Button>
     )
 }

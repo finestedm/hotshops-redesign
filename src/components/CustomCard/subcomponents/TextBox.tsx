@@ -1,4 +1,4 @@
-import { Avatar, Box, Chip, Stack, Typography, useTheme } from "@mui/material";
+import { Avatar, Box, Chip, Stack, Typography, useMediaQuery, useTheme } from "@mui/material";
 import TagBox from "./TagBox";
 import Poland from '../../../media/Flag_of_Poland.svg.webp'
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
@@ -6,6 +6,7 @@ import { TOffer } from "../../../data/offers";
 
 export default function TextBox({ offerDetails }: { offerDetails: TOffer }) {
     const theme = useTheme();
+    const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
     return (
         <Box>
@@ -40,7 +41,7 @@ export default function TextBox({ offerDetails }: { offerDetails: TOffer }) {
                 <Typography variant="body2" sx={{ color: 'text.secondary' }}>
                     {offerDetails.description} 
                 </Typography>
-                <TagBox tags={offerDetails.tags}/>
+                {!isSmallScreen && <TagBox tags={offerDetails.tags} />}
             </Stack>
         </Box>
     )
