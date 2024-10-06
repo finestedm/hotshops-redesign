@@ -5,6 +5,7 @@ export default function GoToOfferButton() {
     return (
         <Box>
             <Button
+                sx={{borderRadius: 10}}
                 fullWidth
                 variant='contained'
                 endIcon={<OpenInNewIcon />}
