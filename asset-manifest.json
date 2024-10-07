@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/hotshops-redesign/static/css/main.1a3c81fa.css",
-    "main.js": "/hotshops-redesign/static/js/main.e7252756.js",
+    "main.js": "/hotshops-redesign/static/js/main.61c09c01.js",
     "static/media/playstation.webp": "/hotshops-redesign/static/media/playstation.56aea3cdf61707f985c7.webp",
+    "static/media/Amazon_(company)-Logo.wine.svg": "/hotshops-redesign/static/media/Amazon_(company)-Logo.wine.e02ff81ea007a246d82ee89d0d9322aa.svg",
     "static/media/logo.svg": "/hotshops-redesign/static/media/logo.deb2d4f442d6e6edf40bd97a4d325ef1.svg",
     "index.html": "/hotshops-redesign/index.html",
     "static/media/Flag_of_Poland.svg.webp": "/hotshops-redesign/static/media/Flag_of_Poland.svg.b0bd76eb6d49c56663eb.webp",
     "main.1a3c81fa.css.map": "/hotshops-redesign/static/css/main.1a3c81fa.css.map",
-    "main.e7252756.js.map": "/hotshops-redesign/static/js/main.e7252756.js.map"
+    "main.61c09c01.js.map": "/hotshops-redesign/static/js/main.61c09c01.js.map"
   },
   "entrypoints": [
     "static/css/main.1a3c81fa.css",
-    "static/js/main.e7252756.js"
+    "static/js/main.61c09c01.js"
   ]
 }
