@@ -16,34 +16,55 @@ export default function CustomCard({ offerDetails }: { offerDetails: TOffer }) {
     return (
         <Card sx={{ textAlign: 'left' }}>
             <CardContent>
-                <Stack spacing={2} p={0}>
-                    <TopBar />
-                    <Divider />
-                    <Box>
-                        <Grid2 container spacing={3}>
-                            <Grid2 size={{ xs: 12, sm: 5, md: 4 }}>
-                                <Box>
-                                    <Grid2 container spacing={3}>
-                                        <Grid2 size={{ xs: 3, sm: 12 }}>
-                                            <Thermometer temperature={offerDetails.temperature} />
-                                        </Grid2>
-                                        <Grid2 size={{ xs: 9, sm: 12 }}>
-                                            <ImageBox />
-                                        </Grid2>
-
-                                    </Grid2>
-                                </Box>
-                            </Grid2>
-                            <Grid2 size={{ xs: 12, sm: 7, md: 8 }}>
-                                <Stack spacing={4}>
-                                    <TextBox offerDetails={offerDetails} />
+                {isSmallScreen
+                    ?
+                    (<Box>
+                        <Stack spacing={2} p={0}>
+                            <TopBar />
+                            <Divider />
+                            <Stack direction='row' spacing={2}>
+                                <Stack width='30%' spacing={1.5}>
+                                    <Thermometer temperature={offerDetails.temperature} />
+                                    <ImageBox />
                                 </Stack>
-                            </Grid2>
-                        </Grid2>
-                    </Box>
-                    <Divider />
-                    <BottomButtonBox />
-                </Stack>
+                                <TextBox offerDetails={offerDetails} />
+                            </Stack>
+                            <Divider />
+                            <BottomButtonBox />
+                        </Stack>
+                    </Box>)
+                    :
+                    (
+                        <Stack spacing={2} p={0}>
+                            <TopBar />
+                            <Divider />
+                            <Box>
+                                <Grid2 container spacing={3}>
+                                    <Grid2 size={{ xs: 12, sm: 5, md: 4 }}>
+                                        <Box>
+                                            <Grid2 container spacing={3}>
+                                                <Grid2 size={{ xs: 3, sm: 12 }}>
+                                                    <Thermometer temperature={offerDetails.temperature} />
+                                                </Grid2>
+                                                <Grid2 size={{ xs: 9, sm: 12 }}>
+                                                    <ImageBox />
+                                                </Grid2>
+
+                                            </Grid2>
+                                        </Box>
+                                    </Grid2>
+                                    <Grid2 size={{ xs: 12, sm: 7, md: 8 }}>
+                                        <Stack spacing={4}>
+                                            <TextBox offerDetails={offerDetails} />
+                                        </Stack>
+                                    </Grid2>
+                                </Grid2>
+                            </Box>
+                            <Divider />
+                            <BottomButtonBox />
+                        </Stack>
+                    )
+                }
             </CardContent>
             {!isSmallScreen &&
                 <Box>
